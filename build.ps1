@@ -90,7 +90,8 @@ Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 $publishDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath('./publish')
 $GitBranch = ((Invoke-Expression 'git rev-parse --abbrev-ref HEAD') | Out-String).Trim()
 $GitCommit = ((Invoke-Expression 'git rev-parse HEAD') | Out-String).Trim()
-$VersionSuffix = Get-VersionSuffix $GitBranch
+$branch = if ($BranchName) { $BranchName } else { $GitBranch }
+$VersionSuffix = Get-VersionSuffix $branch
 $Version = if ($VersionSuffix -eq '') { $VersionPrefix } else { "$VersionPrefix-$VersionSuffix" }
 $NugetPackagesRoot = (Invoke-Expression "nuget locals global-packages -list" | Out-String).Replace("global-packages:", "").Trim()
 
