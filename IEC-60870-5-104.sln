@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iec608705104", "src\Iec608705104\Iec608705104.csproj", "{983D8069-1669-4154-8439-4363BC1C501B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{A6229F80-285C-416B-B70C-CF1F35DC0BF4}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+		clean.ps1 = clean.ps1
+		CODEOWNERS = CODEOWNERS
+		dependencies.props = dependencies.props
+		LICENSE = LICENSE
+		publish.ps1 = publish.ps1
+		README.md = README.md
+		shared.props = shared.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EA357619-A9D1-43E5-B989-3F21745AFEC5}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{037BE069-EB86-47EE-B1BC-E2FAC8CD57EB}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmark", "benchmark", "{BC1337BE-6DFE-42F4-B340-1C0BF73AF658}"
+	ProjectSection(SolutionItems) = preProject
+		benchmark\Directory.Build.props = benchmark\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{FBC5E843-FA87-4C0A-95F1-C01299FD8E48}"
+	ProjectSection(SolutionItems) = preProject
+		example\Directory.Build.props = example\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9963479C-ACFB-459D-B558-628984135367}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iec608705104.Tests", "test\Iec608705104.Tests\Iec608705104.Tests.csproj", "{AF647D1F-0C0A-4EB5-9890-6D7560F25E87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlledStationSandbox", "example\ControlledStationSandbox\ControlledStationSandbox.csproj", "{FFE28484-BCED-45FE-A0CE-ABC115C42E3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllingStationSandbox", "example\ControllingStationSandbox\ControllingStationSandbox.csproj", "{9E79DE29-CF1F-4D00-8952-ABA04E9D2D79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{983D8069-1669-4154-8439-4363BC1C501B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{983D8069-1669-4154-8439-4363BC1C501B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{983D8069-1669-4154-8439-4363BC1C501B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{983D8069-1669-4154-8439-4363BC1C501B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF647D1F-0C0A-4EB5-9890-6D7560F25E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF647D1F-0C0A-4EB5-9890-6D7560F25E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF647D1F-0C0A-4EB5-9890-6D7560F25E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF647D1F-0C0A-4EB5-9890-6D7560F25E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE28484-BCED-45FE-A0CE-ABC115C42E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE28484-BCED-45FE-A0CE-ABC115C42E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE28484-BCED-45FE-A0CE-ABC115C42E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE28484-BCED-45FE-A0CE-ABC115C42E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E79DE29-CF1F-4D00-8952-ABA04E9D2D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E79DE29-CF1F-4D00-8952-ABA04E9D2D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E79DE29-CF1F-4D00-8952-ABA04E9D2D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E79DE29-CF1F-4D00-8952-ABA04E9D2D79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA357619-A9D1-43E5-B989-3F21745AFEC5} = {A6229F80-285C-416B-B70C-CF1F35DC0BF4}
+		{037BE069-EB86-47EE-B1BC-E2FAC8CD57EB} = {A6229F80-285C-416B-B70C-CF1F35DC0BF4}
+		{BC1337BE-6DFE-42F4-B340-1C0BF73AF658} = {A6229F80-285C-416B-B70C-CF1F35DC0BF4}
+		{FBC5E843-FA87-4C0A-95F1-C01299FD8E48} = {A6229F80-285C-416B-B70C-CF1F35DC0BF4}
+		{AF647D1F-0C0A-4EB5-9890-6D7560F25E87} = {9963479C-ACFB-459D-B558-628984135367}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B4E90B2-E118-429A-B493-4C1F2D3F210F}
+	EndGlobalSection
+EndGlobal

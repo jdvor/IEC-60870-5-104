@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(LibTargetFramework)</TargetFramework>
+    <Description>
+      NOT FUNCTIONAL AT THE MOMENT.
+      IEC 60870-5-104 is a standard protocol which facilitates supervisory control and data acquisition
+      in electrical engineering and power system automation applications.
+      It is an extension of IEC 101 protocol with the changes in transport, network,
+      link &amp; physical layer services to suit the complete network access.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="$(MicrosoftExtensionsVersion)" />
+    <PackageReference Include="System.IO.Pipelines" Version="$(SystemIoPipelinesVersion)" />
+  </ItemGroup>
+
+</Project>

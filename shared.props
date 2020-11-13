@@ -1,0 +1,27 @@
+<Project>
+
+  <PropertyGroup>
+    <VersionPrefix Condition="'$(VersionPrefix)'==''">1.0.0.0</VersionPrefix>
+    <Version Condition="'$(VersionSuffix)'==''">$(VersionPrefix)</Version>
+    <Version Condition="'$(VersionSuffix)'!=''">$(VersionPrefix)-$(VersionSuffix)</Version>
+    <LangVersion>latest</LangVersion>
+    <RuntimeIdentifier Condition="'$(RuntimeIdentifier)'==''">win10-x64</RuntimeIdentifier>
+    <CodeAnalysis Condition="'$(CodeAnalysis)'==''">True</CodeAnalysis>
+    <LibTargetFramework>netstandard2.1</LibTargetFramework>
+    <AppTargetFramework>netcoreapp3.1</AppTargetFramework>
+
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+
+    <Authors>Jan Dvorak</Authors>
+    <PackageTags></PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/jdvor/IEC-60870-5-104</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jdvor/IEC-60870-5-104.git</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+</Project>

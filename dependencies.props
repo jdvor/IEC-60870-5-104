@@ -1,0 +1,19 @@
+<Project>
+  <PropertyGroup>
+    <FxCopAnalyzersVersion>3.3.0</FxCopAnalyzersVersion>
+    <StyleCopAnalyzersVersion>1.1.118</StyleCopAnalyzersVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MoqVersion>4.15.1</MoqVersion>
+    <TestSdkVersion>16.8.0</TestSdkVersion>
+    <XunitVersion>2.4.1</XunitVersion>
+    <XunitRunnerVersion>2.4.3</XunitRunnerVersion>
+    <CompareNETObjectsVersion>4.67.0</CompareNETObjectsVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <MicrosoftExtensionsVersion>3.1.8</MicrosoftExtensionsVersion>
+    <SystemIoPipelinesVersion>4.7.2</SystemIoPipelinesVersion>
+  </PropertyGroup>
+</Project>

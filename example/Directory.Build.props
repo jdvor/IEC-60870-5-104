@@ -1,0 +1,32 @@
+<Project>
+
+  <Import Project="..\shared.props" />
+  <Import Project="..\dependencies.props" />
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet Condition="'$(CodeAnalysis)'=='True'">..\..\default.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>$(WarnAsErrors)</TreatWarningsAsErrors>
+    <DebugType>Embedded</DebugType>
+    <EmbedAllSources>True</EmbedAllSources>
+
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+
+    <Authors>Jan Dvorak</Authors>
+    <PackageTags>SmartGrid; automat; DES</PackageTags>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright (c) 2020 Nano Energies</Copyright>
+    <PackageProjectUrl>https://git.nanox.cz/it/des/sgautomat</PackageProjectUrl>
+    <RepositoryUrl>https://git.nanox.cz/it/des/sgautomat.git</RepositoryUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(CodeAnalysis)'=='True'">
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="$(FxCopAnalyzersVersion)" PrivateAssets="all"/>
+    <PackageReference Include="StyleCop.Analyzers" Version="$(StyleCopAnalyzersVersion)" PrivateAssets="all"/>
+  </ItemGroup>
+
+</Project>

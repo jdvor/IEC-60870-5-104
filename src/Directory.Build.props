@@ -1,0 +1,18 @@
+<Project>
+
+  <Import Project="..\shared.props" />
+  <Import Project="..\dependencies.props" />
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet Condition="'$(CodeAnalysis)'=='True'">..\..\default.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>$(WarnAsErrors)</TreatWarningsAsErrors>
+    <DebugType>Embedded</DebugType>
+    <EmbedAllSources>True</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(CodeAnalysis)'=='True'">
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="$(FxCopAnalyzersVersion)" PrivateAssets="all"/>
+    <PackageReference Include="StyleCop.Analyzers" Version="$(StyleCopAnalyzersVersion)" PrivateAssets="all"/>
+  </ItemGroup>
+
+</Project>
